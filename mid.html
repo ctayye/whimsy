@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanye West Project">
+  <title>KANYE WEST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body { background:#0a0a0a; color:#fff; font-family:'Playfair Display',Georgia,serif; margin:0; padding:0; }
+    .wrapper { max-width:960px; margin:0 auto; padding:20px; border-left:2px solid #fff; border-right:2px solid #fff; }
+  /*dropping kanye's hardest quote in the code cz im bored*/
+    .header-section { text-align:center; border-bottom:3px solid #fff; padding:30px 10px 20px; }
+    .main-title { font-size:72px; letter-spacing:18px; margin:0; font-weight:900; line-height:1; font-family:'Playfair Display SC',serif; }
+    .subtitle { font-size:14px; letter-spacing:6px; color:#ccc; margin-top:10px; }
+    .tag-line { font-size:11px; letter-spacing:4px; color:#888; margin-top:6px; }
+    
+    .marquee-strip { background:#fff; color:#000; padding:6px 0; font-size:12px; letter-spacing:3px; font-weight:bold; }
+  
+    .main-table { width:100%; border-collapse:collapse; }
+    .main-table td { vertical-align:top; padding:24px 20px; border:1px solid #333; }
+    .left-col { width:55%; }
+    .right-col { width:45%; border-left:2px solid #fff; }
+    /* i need a room full of mirrors so i can be surrounded by winners.*/
+    .section-label { font-size:10px; letter-spacing:5px; color:#888; text-transform:uppercase; border-bottom:1px solid #444; padding-bottom:6px; margin-bottom:14px; }
+    .quote-box { border-left:3px solid #fff; padding:10px 16px; margin:16px 0; font-style:italic; color:#ccc; font-size:13px; line-height:1.7; }
+    .house-title { font-size:28px; letter-spacing:8px; margin:0 0 6px; text-transform:uppercase; line-height:1.2; font-family:'Playfair Display SC',serif; }
+    .house-sub { font-size:10px; letter-spacing:4px; color:#777; margin-bottom:16px; }
+    .highlight { color:#fff; font-weight:bold; }
+    .dim { color:#666; }
+    
+    .poster-img { width:100%; height:240px; object-fit:cover; border:1px solid #444; filter:grayscale(40%) contrast(110%); display:block; }
+    .poster-img-sm { width:100%; height:200px; object-fit:cover; border:1px solid #555; filter:grayscale(60%); display:block; }
+    
+    .album-section { border-top:2px solid #fff; padding:24px 20px; }
+    .album-table { width:100%; border-collapse:collapse; }
+    .album-table td { padding:8px; text-align:center; vertical-align:top; }
+    .album-cover { width:140px; height:140px; object-fit:cover; filter:grayscale(50%); border:1px solid #444; display:block; margin:0 auto; }
+    .album-title { font-size:9px; letter-spacing:2px; color:#aaa; margin-top:6px; text-transform:uppercase; }
+    
+    .info-dl dt { font-size:9px; letter-spacing:3px; color:#666; text-transform:uppercase; margin-top:10px; }
+    .info-dl dd { font-size:13px; color:#eee; margin-left:0; border-bottom:1px solid #222; padding-bottom:8px; }
+    .award-list { list-style:none; padding:0; margin:10px 0; }
+    .award-list li { font-size:11px; color:#aaa; letter-spacing:2px; padding:4px 0; border-bottom:1px solid #1e1e1e; }
+    .award-list li::before { content:"— "; color:#555; }
+    /* if i could date myself i would*/
+    .audio-section { border-top:1px solid #333; padding:16px 20px; display:flex; align-items:center; gap:16px; }
+    .audio-label { font-size:9px; letter-spacing:4px; color:#666; text-transform:uppercase; white-space:nowrap; }
+    .audio-section audio { flex:1; height:32px; filter:invert(1); }
+    
+    .form-section { border-top:2px solid #fff; padding:28px 20px; }
+    .form-section fieldset { border:1px solid #555; padding:20px; margin:0; }
+    .form-section legend { font-size:10px; letter-spacing:4px; color:#888; padding:0 8px; text-transform:uppercase; }
+    .form-row { margin-bottom:14px; }
+    .form-section label { display:block; font-size:10px; letter-spacing:3px; color:#888; margin-bottom:5px; text-transform:uppercase; }
+    .form-section input, .form-section select, .form-section textarea { background:#111; border:1px solid #444; color:#fff; padding:8px 12px; width:100%; font-family:'Playfair Display',serif; font-size:12px; box-sizing:border-box; }
+    .form-section textarea { resize:vertical; height:80px; }
+    .form-section button { background:#fff; color:#000; border:none; padding:10px 28px; font-family:'Playfair Display',serif; font-size:11px; letter-spacing:4px; text-transform:uppercase; cursor:pointer; margin-top:8px; font-weight:bold; }
+    .form-section button:hover { background:#ccc; }
+    
+    .footer-section { border-top:2px solid #fff; padding:20px; text-align:center; }
+    .footer-quote { font-size:13px; letter-spacing:3px; color:#aaa; font-style:italic; margin-bottom:12px; }
+    .footer-address { font-size:9px; letter-spacing:3px; color:#555; font-style:normal; }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  
+  <div class="header-section">
+    <p class="tag-line">EST. 1977 &nbsp;·&nbsp; CHICAGO, ILLINOIS</p>
+    <h1 class="main-title">KANYE WEST</h1>
+    <p class="subtitle">160,000,000+ RECORDS SOLD</p>
+    <p class="tag-line"><span class="dim">RAPPER &nbsp;·&nbsp; PRODUCER &nbsp;·&nbsp; DESIGNER &nbsp;·&nbsp; VISIONARY</span></p>
+  </div>
+
+
+  <div class="marquee-strip">
+    <marquee behavior="scroll" direction="left" scrollamount="4">
+      ★ THE COLLEGE DROPOUT &nbsp;&nbsp; ★ LATE REGISTRATION &nbsp;&nbsp; ★ GRADUATION &nbsp;&nbsp; ★ 808s &amp; HEARTBREAK &nbsp;&nbsp; ★ MY BEAUTIFUL DARK TWISTED FANTASY &nbsp;&nbsp; ★ YEEZUS &nbsp;&nbsp; ★ THE LIFE OF PABLO &nbsp;&nbsp; ★ DONDA &nbsp;&nbsp; ★ VULTURES
+    </marquee>
+  </div>
+  <table class="main-table">
+    <tr>
+      <td class="left-col">
+        <p class="section-label">Biography</p>
+        <img class="poster-img" src="C:\Users\Lenovo\Downloads\kanyeee.jpg"alt="Kanye West">
+        <br>
+        <p style="font-size:12px;line-height:1.8;color:#ccc;margin-top:14px;">
+          <b>Kanye Omari West</b>, born <u>June 8, 1977</u>, is an American rapper, record producer, and fashion designer from <i>Chicago, Illinois.</i> He is one of the most critically acclaimed musicians of the 21st century, widely regarded as one of the greatest artists of all time.
+        </p>
+        
+        <div class="quote-box">
+          <span class="highlight">"</span><i>I am not a rapper. I am an idea that cannot be contained.</i><span class="highlight">"</span><br>
+          <span class="dim">— Kanye West</span>
+        </div>
+        <p class="section-label" style="margin-top:18px;">Key Facts</p>
+        <dl class="info-dl">
+          <dt>Born</dt><dd>June 8, 1977 · Atlanta, GA</dd>
+          <dt>Genre</dt><dd>Hip-Hop · Soul · Electronic · Gospel</dd>
+          <dt>Labels</dt><dd>GOOD Music · Def Jam</dd>
+          <dt>Grammy Awards</dt><dd><b>24 Grammy Awards</b> (75 nominations)</dd>
+        </dl>
+        <p class="section-label" style="margin-top:16px;">Achievements</p>
+        <ul class="award-list">
+          <li>Best Rap Album — The College Dropout (2005)</li>
+          <li>Best Rap Album — Graduation (2008)</li>
+          <li>MTV Video Vanguard Award (2015)</li>
+          <li>Ivor Novello International Award (2020)</li>
+        </ul>
+      </td>
+<!--this one is my favvvvvvvvv have u ever thought you were in love with someone but then realized you were just staring in a mirror for 20 minutes!-->
+      <td class="right-col">
+        <p class="section-label">Collection</p>
+        <h2 class="house-title">HOUSE<br>OF<br>POSTERS</h2>
+        <p class="house-sub">LIMITED EDITION · SERIES 01</p>
+        <img class="poster-img-sm" src="C:\Users\Lenovo\Downloads\kanye westr house.jpg" alt="Kanye West Live">
+        <br>
+        <p style="font-size:11px;color:#aaa;line-height:1.7;margin-top:12px;">
+          A tribute to one of the most polarising and influential figures in modern music. This poster series celebrates the artistry and legacy of <span class="highlight">Ye</span>.
+        </p>
+        <p class="section-label" style="margin-top:18px;">Discography Rank</p>
+        <ol style="padding-left:18px;font-size:11px;color:#aaa;line-height:2;">
+          <li>My Beautiful Dark Twisted Fantasy</li>
+          <li>The College Dropout</li>
+          <li>Graduation</li>
+          <li>Late Registration</li>
+          <li>808s &amp; Heartbreak</li>
+          <li>Yeezus</li>
+        </ol>
+        </p>
+      </td>
+    </tr>
+  </table>
+  <div class="album-section">
+    <p class="section-label">Discography</p>
+    <table class="album-table">
+      <tr>
+        <td>
+          <img class="album-cover" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Kanyewest_collegedropout.jpg" alt="College Dropout">
+          <p class="album-title">The College<br>Dropout · 2004</p>
+        </td>
+        <td>
+          <img class="album-cover" src="C:\Users\Lenovo\Downloads\grad.jpg" alt="Graduation">
+          <p class="album-title">Graduation<br>· 2007</p>
+        </td>
+        <td>
+          <img class="album-cover" src= "C:\Users\Lenovo\Downloads\my beautiful dark and twisted.jpg" alt="MBDTF">
+          <p class="album-title">MBDTF<br>· 2010</p>
+        </td>
+        <td>
+          <img class="album-cover" src="C:\Users\Lenovo\Downloads\ye.jpg" alt="Ye">
+          <p class="album-title">Ye · 2018</p>
+        </td>
+        <td>
+          <!--i need new haters the old ones are starting to like me!-->
+          <img class="album-cover" src="C:\Users\Lenovo\Downloads\donda.jpg" alt="Donda">
+          <p class="album-title">Donda · 2021</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="audio-section">
+    <span class="audio-label">Now Playing </span>
+    <audio controls autoplay loop style="width:100%;">
+      <source src="C:\Users\Lenovo\Downloads\09 Runaway [Ft. Pusha T].mp3"type="audio/mpeg">
+    </audio>
+    <span class="audio-label">RUNAWAY 2010</span>
+  </div>
+  <div class="form-section">
+    <p class="section-label">Fan Registry!!Order Your Poster!!</p>
+    <fieldset>
+      <legend>Contact &amp; Order Form</legend>
+      <div class="form-row">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your name">
+      </div>
+      <div class="form-row">
+        <label for="femail">Email Address</label>
+        <input type="email" id="femail" name="femail" placeholder="your@email.com">
+      </div>
+      <div class="form-row">
+        <label for="falbum">Favourite Album</label>
+        <select id="falbum" name="falbum">
+          <optgroup label="Early Career">
+            <option value="tcd">The College Dropout (2004)</option>
+            <option value="lr">Late Registration (2005)</option>
+            <option value="grad">Graduation (2007)</option>
+          </optgroup>
+          <optgroup label="Experimental Era">
+            <option value="808">808s &amp; Heartbreak (2008)</option>
+            <option value="mbdtf">MBDTF (2010)</option>
+            <option value="yeezus">Yeezus (2013)</option>
+          </optgroup>
+          <optgroup label="Recent Work">
+            <option value="tlop">The Life of Pablo (2016)</option>
+            <option value="ye">Ye (2018)</option>
+            <option value="donda">Donda (2021)</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="fsize">Poster Size</label>
+        <select id="fsize" name="fsize">
+          <option value="a4">A4 (21 × 29.7 cm)</option>
+          <option value="a3">A3 (29.7 × 42 cm)</option>
+          <option value="a2">A2 (42 × 59.4 cm)</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="fmsg">Your Message</label>
+        <textarea id="fmsg" name="fmsg" placeholder="one good kanye is worth of thousand ye's"></textarea>
+      </div>
+      <button type="submit">ORDER NOW →</button>
+    </fieldset>
+  </div>
+  <div class="footer-section">
+    <p class="footer-quote"><i>"My greatest pain in life is that I will never be able to see myself perform live."</i></p>
+    <address class="footer-address">
+       Ctay's Class 11 Computer Science Project
+      <a href="mailto:ctayisgoated@gmail.com" style="color:#444;text-decoration:none;"></a>
+      <br><br>© 2024 &nbsp;·&nbsp; HOUSE OF POSTERS &nbsp;·&nbsp; ALL RIGHTS RESERVED
+    </address>
+  </div>
+
+</div>
+</body>
+</html>
